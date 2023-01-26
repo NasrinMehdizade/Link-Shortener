@@ -114,6 +114,11 @@ main .container2 .kadr a button {
     outline: none;
     cursor: pointer;
 }
+/*line3*/
+.line3 {
+    padding: 30px 0;
+    background-color: #d8e0e7;
+}
 /*media*/
 @media screen and (max-width: 985px) {
     main .container2 .kadr {
