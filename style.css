@@ -53,6 +53,7 @@ header .container {
     border-radius: 5px;
     font-weight: bold;
     font-size: 15px;
+    cursor: pointer;
 }
 /*main*/
 main {
@@ -80,7 +81,7 @@ main .container2 .kadr {
     flex-direction: row;
     justify-content: space-between;
     padding: 15px 20px;
-    margin-top: 25px;
+    margin-top: 30px;
     border-radius: 15px;
     background-color: white;
 }
@@ -91,9 +92,15 @@ main .container2 .kadr input {
     color: #7b7e8e;
     border-radius: 15px;
     border: none;
+    cursor: pointer;
+}
+main .container2 .kadr input:focus {
+    border: white;
+    outline: white;
 }
 main .container2 .kadr a {
     z-index: 3;
+    cursor: pointer;
 }
 main .container2 .kadr a button {
     z-index: 3;
@@ -105,6 +112,7 @@ main .container2 .kadr a button {
     border-radius: 15px;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 /*media*/
 @media screen and (max-width: 985px) {
@@ -136,6 +144,9 @@ main .container2 .kadr a button {
     .left h3 {
         font-size: 13px;
     }
+    main .container2 h1 {
+        font-size: 35px;
+    }
 }  
 @media screen and (max-width: 520px) {
     main .container2 .kadr {
@@ -163,6 +174,9 @@ main .container2 .kadr a button {
     .left h3 {
         font-size: 11px;
     }
+    main .container2 h1 {
+        font-size: 30px;
+    }
 }  
 @media screen and (max-width: 390px) {
     main .container2 .kadr {
@@ -189,6 +203,9 @@ main .container2 .kadr a button {
     }
     .left h3 {
         font-size: 9px;
+    }
+    main .container2 h1 {
+        font-size: 25px;
     }
 }  
 @media screen and (max-width: 320px) {
