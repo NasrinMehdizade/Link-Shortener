@@ -119,6 +119,55 @@ main .container2 .kadr a button {
     padding: 30px 0;
     background-color: #d8e0e7;
 }
+.line3 .container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.line3 .left2 {
+    width: 50%;
+}
+.line3 .right2 {
+    width: 50%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.line3 .left2 h3 {
+    font-size: 17px;
+    font-weight: 200;
+}
+.line3 .left2 h3 span {
+    font-weight: bold;
+}
+.line3 .right2 {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ebeff4;
+}
+.line3 .right2 a {
+    cursor: pointer;
+    padding-left: 10px;
+    background-color:#ebeff4;
+    border-left: 2px solid #dadee7;
+}
+.line3 .right2 a button {
+    color: #181341;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #ebeff4;
+}
+.line3 .right2 input {
+    border: none;
+    background-color: #ebeff4;
+}
+.line3 .right2 input:focus {
+    border: none;
+    outline: none;
+}
 /*media*/
 @media screen and (max-width: 985px) {
     main .container2 .kadr {
@@ -130,6 +179,12 @@ main .container2 .kadr a button {
     main .container2 .kadr a button {
         font-size: 13px;
     }
+    .line3 .right2 input {
+        padding: 0 80px 0 0;
+    }
+    .line3 .left2 h3 {
+        font-size: 15px;
+    }        
 }
 @media screen and (max-width: 768px) {
     .container2 {
@@ -152,7 +207,22 @@ main .container2 .kadr a button {
     main .container2 h1 {
         font-size: 35px;
     }
-}  
+    .line3 .container2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }  
+    .line3 .left2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .line3 .right2 {
+        width: 100%; 
+    }  
+    .line3 .left2 h3 {
+        font-size: 22px;
+        text-align: center;
+    }
 @media screen and (max-width: 520px) {
     main .container2 .kadr {
         width: 95%;
@@ -181,6 +251,9 @@ main .container2 .kadr a button {
     }
     main .container2 h1 {
         font-size: 30px;
+    }
+    .line3 .left2 h3 {
+        font-size: 14px;
     }
 }  
 @media screen and (max-width: 390px) {
@@ -212,6 +285,9 @@ main .container2 .kadr a button {
     main .container2 h1 {
         font-size: 25px;
     }
+    .line3 .left2 h3 {
+        font-size: 11px;
+    }
 }  
 @media screen and (max-width: 320px) {
     .right a button {
@@ -240,4 +316,5 @@ main .container2 .kadr a button {
     main .container2 .kadr input {
         font-size: 5px;
     }
+}
 } 
