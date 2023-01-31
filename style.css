@@ -18,7 +18,7 @@
     url("fonts/iranyekan_numbers/svg/iranyekanwebregular(fanum).svg") format('svg');
 }
 body {
-    background-color: #ebeff4;
+    /* background-color: red; */
     font-family: 'iranyekan_numbers','iranyekan';
 }
 .imd1 img {
@@ -31,6 +31,9 @@ body {
 .container {
     width: 80%;
     margin: auto;
+}
+.background2 {
+    background-color: #ebeff4;
 }
 /*header*/
 header .container {
@@ -63,7 +66,8 @@ header .container {
 .right a button {
     color: white;
     background-color: #1916e7;
-    padding: 8%;
+    /* padding: 8%; */
+    margin-top: 15px;
     border: none;
     outline: none;
     font-size: 15px;
@@ -93,6 +97,7 @@ main .container2 h1 span {
 }
 main .container2 .search-container {
     width: 50%;
+    margin-top: 30px;
 }
 main .container2 .search-container .form-h input {
     padding: 10px 20px;
@@ -103,6 +108,17 @@ main .container2 .search-container .form-h button {
     padding: 10px 0;
     border-radius: 0 15px 15px 0;
 }
+input[type=url] {
+    width: calc(100% - 150px);
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px 0 0 5px ;    
+}  
+input[type=url]:focus {
+    outline: none;
+} 
 /*line3*/
 .line3 {
     padding: 20px 0;
@@ -152,6 +168,14 @@ input[type=email]:focus {
 }
 .left2 p span {
     font-weight: bold;
+}
+.background {
+    width: 100%;
+    margin: auto;
+    background-image: url("./4.4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 240px;
 }
 /*line4*/
 .line4 {
@@ -238,17 +262,20 @@ input[type=email]:focus {
     text-shadow: .1px .1px 1px black;
 }
 .line-5 .container2 .boxes .box .top h5 {
-    color: #7356ff;
+    color: #e3dff7;
     text-shadow: .1px .1px 1px black;
+    font-weight: normal;
 }
 .line-5 .container2 .boxes .box .center {
     padding: 40px 10px;
 }
 .line-5 .container2 .boxes .box .center h5 {
     margin-bottom: 10px;
+    font-weight: normal;
 }
 .line-5 .container2 .boxes .box .center-1 h5 {
     margin-bottom: 10px;
+    font-weight: normal;
 }
 .line-5 .container2 .boxes .box .button {
     padding: 10px;
@@ -264,13 +291,19 @@ input[type=email]:focus {
 .line-5 .container2 .boxes .box h1.h1-60 {
     color: #ff5618;
 }
-.t-1 h5 {
-    margin-right: 40px;
+.t-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
 }
+.t-1 h5 {
+    font-size: 19px;
+    margin-right: 10px;
+}
+
 /*line6*/
 .line6 {
     position: relative;
-    margin-top: 50px;
 }
 .line6 h5 {
     color: gray;
@@ -368,6 +401,9 @@ input[type=email]:focus {
     .center2 .box4 img.top-icon {
         right: 76%;
         bottom: 91%;
+    }
+    .background {
+        padding-bottom: 100px;
     }
  }
  @media screen and (max-width: 1044px ) {
@@ -497,6 +533,9 @@ input[type=email]:focus {
    }
    .line7 p {
     font-size: 14px;
+   }
+   .background {
+        background-image: none;
    }
 }      
 @media screen and (max-width: 755px ) {
